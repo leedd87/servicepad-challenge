@@ -18,10 +18,11 @@ f(n) = f(n-1) + f(n-2)
 
 const fibonacci = (n) => {
 	if (n < 2) return n;
-	return fibonacci(n - 2) + fibonacci(n - 1);
+	return fibonacci(n - 1) + fibonacci(n - 2);
 };
 
 console.log(fibonacci(6)); //8
 console.log(fibonacci(7)); //13
+console.log(fibonacci(8)); //21
 
 module.exports = fibonacci;
