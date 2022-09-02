@@ -1,7 +1,11 @@
 import React from "react";
 
 const AddNewArticlesPage = () => {
-	return <div>AddNewArticlesPage</div>;
+	return (
+		<div>
+			<h1>Heloo NEW ARTICLE</h1>
+		</div>
+	);
 };
 
 export default AddNewArticlesPage;

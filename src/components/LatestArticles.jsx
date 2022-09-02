@@ -15,7 +15,7 @@ const LatestArticles = () => {
 
 	//console.log(articles);
 
-	let articlesSortById = articles.sort(function (a, b) {
+	let articlesSortById = articles?.sort(function (a, b) {
 		return b.id - a.id;
 	});
 
