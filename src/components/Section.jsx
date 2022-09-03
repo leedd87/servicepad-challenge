@@ -30,7 +30,7 @@ const Section = () => {
 					<div className="feature__title">Simple Budgeting</div>
 					<div className="feature__description">
 						See exactly where your money goes each month. Receive
-						notifications when you’re close to hitting your limits.
+						notifications when you're close to hitting your limits.
 					</div>
 				</div>
 

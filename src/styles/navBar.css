@@ -1,0 +1,21 @@
+.navBar {
+	width: 100vw;
+	height: 80px;
+	background-color: white;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.navigation {
+	width: 356px;
+	display: flex;
+	justify-content: space-between;
+}
+
+a {
+	text-decoration: none;
+	font-size: 14px;
+	color: hsl(233, 8%, 62%);
+	transition: color 300ms ease-in-out;
+}

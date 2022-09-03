@@ -1,14 +1,15 @@
 import React from "react";
 import logo from "../images/logo.svg";
+import "../styles/navBar.css";
 
 const NavBar = () => {
 	return (
 		<>
-			<nav>
+			<nav className="navBar">
 				<a href="/">
 					<img src={logo} alt="Easybank" />
 				</a>
-				<div>
+				<div className="navigation">
 					<a href="/">Home</a>
 					<a href="/">About</a>
 					<a href="/">Contact</a>
