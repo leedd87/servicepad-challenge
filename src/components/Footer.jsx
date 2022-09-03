@@ -47,9 +47,7 @@ const Footer = () => {
 					</div>
 
 					<div className="footer__cta">
-						<a href="/" className="button">
-							Request Invite
-						</a>
+						<button className="invite-btn">Request Invite</button>
 					</div>
 					<div className="footer__copyright">
 						© Easybank. All Rights Reserved

@@ -28,15 +28,14 @@ const LatestArticles = () => {
 	console.log(articlesSortById);
 
 	return (
-		<div className="">
+		<div className="latest-articles-container">
 			<h2>Latest Articles</h2>
 			<div className="article-container">
 				{/* {articlesSortById &&
 					articlesSortById.map((article) => (
 						<CardLatestArticles article={article} />
 					))} */}
-
-				<a href="/" className="article-item">
+				<div className="article-card">
 					<div>
 						<img src={currency} alt="" />
 					</div>
@@ -51,8 +50,8 @@ const LatestArticles = () => {
 							in a single …
 						</p>
 					</div>
-				</a>
-				<a href="/" className="article-item">
+				</div>
+				<div className="article-card">
 					<div>
 						<img src={restaurant} alt="" />
 					</div>
@@ -65,24 +64,22 @@ const LatestArticles = () => {
 							means you …
 						</p>
 					</div>
-				</a>
-				<a href="/" className="article-item">
+				</div>
+				<div className="article-card">
 					<div>
 						<img src={plane} alt="" />
 					</div>
 					<div className="article__text">
 						<span>By Wilson Hutton</span>
-
 						<h5>Take your Easybank card wherever you go</h5>
-
 						<p>
 							We want you to enjoy your travels. This is why we don't
 							charge any fees on purchases while you're abroad. We'll
 							even show you …
 						</p>
 					</div>
-				</a>
-				<a href="/" className="article-item">
+				</div>
+				<div className="article-card">
 					<div>
 						<img src={confetti} alt="" />
 					</div>
@@ -95,7 +92,7 @@ const LatestArticles = () => {
 							through the site ...
 						</p>
 					</div>
-				</a>
+				</div>
 			</div>
 		</div>
 	);

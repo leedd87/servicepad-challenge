@@ -13,10 +13,10 @@ const Hero = () => {
 						and much more.
 					</p>
 					{/* <a href="/">Request Invite</a> */}
-					<button className="hero-btn">Request Invite</button>
+					<button className="invite-btn">Request Invite</button>
 				</div>
-				<div>
-					<img src={phones} alt="phones" />
+				<div className="hero-background-img">
+					<img src={phones} alt="phones" className="phones" />
 				</div>
 			</div>
 		</>

@@ -38,8 +38,7 @@ const NavBar = () => {
 					{/* </li>
 					</ul> */}
 				</div>
-				<a href="/">Request Invite</a>
-				{/* <button>Request Invite</button> */}
+				<button className="invite-btn">Request Invite</button>
 			</nav>
 		</>
 	);
