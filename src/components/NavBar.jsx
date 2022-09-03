@@ -10,11 +10,21 @@ const NavBar = () => {
 					<img src={logo} alt="Easybank" />
 				</a>
 				<div className="navigation">
-					<a href="/">Home</a>
-					<a href="/">About</a>
-					<a href="/">Contact</a>
-					<a href="/">Blog</a>
-					<a href="/">Careers</a>
+					<a href="/" className="nav-item">
+						Home
+					</a>
+					<a href="/" className="nav-item">
+						About
+					</a>
+					<a href="/" className="nav-item">
+						Contact
+					</a>
+					<a href="/" className="nav-item">
+						Blog
+					</a>
+					<a href="/" className="nav-item">
+						Careers
+					</a>
 				</div>
 				<a href="/">Request Invite</a>
 				{/* <button>Request Invite</button> */}

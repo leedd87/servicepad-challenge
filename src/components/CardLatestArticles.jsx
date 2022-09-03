@@ -1,6 +1,8 @@
 import React from "react";
 
-const CardLatestArticles = () => {
+const CardLatestArticles = ({ article }) => {
+	console.log(article);
+
 	return (
 		<>
 			<a href="/" class="article__item">
