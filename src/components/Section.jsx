@@ -1,4 +1,8 @@
 import React from "react";
+import iconOnline from "../images/icon-online.svg";
+import iconBudgeting from "../images/icon-budgeting.svg";
+import iconOnboarding from "../images/icon-onboarding.svg";
+import iconApi from "../images/icon-api.svg";
 
 const Section = () => {
 	return (
@@ -14,7 +18,7 @@ const Section = () => {
 			<div className="feature__grid">
 				<div className="feature__item">
 					<div className="feature__icon">
-						<img src="images/icon-online.svg" alt="" />
+						<img src={iconOnline} alt="icon-online" />
 					</div>
 					<div className="feature__title">Online Banking</div>
 					<div className="feature__description">
@@ -25,7 +29,7 @@ const Section = () => {
 
 				<div className="feature__item">
 					<div className="feature__icon">
-						<img src="images/icon-budgeting.svg" alt="" />
+						<img src={iconBudgeting} alt="" />
 					</div>
 					<div className="feature__title">Simple Budgeting</div>
 					<div className="feature__description">
@@ -36,7 +40,7 @@ const Section = () => {
 
 				<div className="feature__item">
 					<div className="feature__icon">
-						<img src="images/icon-onboarding.svg" alt="" />
+						<img src={iconOnboarding} alt="" />
 					</div>
 					<div className="feature__title">Fast Onboarding</div>
 					<div className="feature__description">
@@ -47,7 +51,7 @@ const Section = () => {
 
 				<div className="feature__item">
 					<div className="feature__icon">
-						<img src="images/icon-api.svg" alt="" />
+						<img src={iconApi} alt="" />
 					</div>
 					<div className="feature__title">Open API</div>
 					<div className="feature__description">
