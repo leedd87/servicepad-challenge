@@ -106,11 +106,7 @@ const AddNewArticlesPage = () => {
 						setTitle(e.target.value);
 					}}
 				/>
-				<button
-					variant="primary"
-					type="submit"
-					className="mb-3 sign-button"
-				>
+				<button type="submit" className="mb-3">
 					Submit
 				</button>
 			</form>
@@ -151,11 +147,7 @@ const AddNewArticlesPage = () => {
 						setModifyTitle(e.target.value);
 					}}
 				/>
-				<button
-					variant="primary"
-					type="submit"
-					className="mb-3 sign-button"
-				>
+				<button type="submit" className="mb-3">
 					Modify
 				</button>
 			</form>
@@ -172,11 +164,7 @@ const AddNewArticlesPage = () => {
 						setDeleteId(e.target.value);
 					}}
 				/>
-				<button
-					variant="primary"
-					type="submit"
-					className="mb-3 sign-button"
-				>
+				<button type="submit" className="mb-3">
 					Delete
 				</button>
 			</form>
