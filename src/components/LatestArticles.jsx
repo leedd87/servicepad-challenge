@@ -36,12 +36,11 @@ const LatestArticles = () => {
 						<CardLatestArticles article={article} />
 					))} */}
 				<div className="article-card">
-					<div>
+					<div className="article-img-container">
 						<img src={currency} alt="" />
 					</div>
-					<div className="article__text">
+					<div className="article-text">
 						<span>By Claire Robinson</span>
-
 						<h5>Receive money in any currency with no fees</h5>
 
 						<p>
@@ -52,10 +51,10 @@ const LatestArticles = () => {
 					</div>
 				</div>
 				<div className="article-card">
-					<div>
+					<div className="article-img-container">
 						<img src={restaurant} alt="" />
 					</div>
-					<div className="article__text">
+					<div className="article-text">
 						<span>By Wilson Hutton</span>
 						<h5>Treat yourself without worrying about money</h5>
 						<p>
@@ -66,10 +65,10 @@ const LatestArticles = () => {
 					</div>
 				</div>
 				<div className="article-card">
-					<div>
+					<div className="article-img-container">
 						<img src={plane} alt="" />
 					</div>
-					<div className="article__text">
+					<div className="article-text">
 						<span>By Wilson Hutton</span>
 						<h5>Take your Easybank card wherever you go</h5>
 						<p>
@@ -80,10 +79,10 @@ const LatestArticles = () => {
 					</div>
 				</div>
 				<div className="article-card">
-					<div>
+					<div className="article-img-container">
 						<img src={confetti} alt="" />
 					</div>
-					<div className="article__text">
+					<div className="article-text">
 						<span>By Claire Robinson</span>
 						<h5>Our invite-only Beta accounts are now live!</h5>
 						<p>
