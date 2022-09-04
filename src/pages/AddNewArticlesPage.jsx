@@ -87,7 +87,7 @@ const AddNewArticlesPage = () => {
 			>
 				<h4>Add new Article</h4>
 				<input
-					placeholder="author"
+					placeholder="Author"
 					type="text"
 					value={author}
 					onChange={(e) => {
@@ -95,7 +95,7 @@ const AddNewArticlesPage = () => {
 					}}
 				/>
 				<input
-					placeholder="content"
+					placeholder="Content"
 					type="text"
 					value={content}
 					onChange={(e) => {
@@ -103,14 +103,14 @@ const AddNewArticlesPage = () => {
 					}}
 				/>
 				<input
-					placeholder="title"
+					placeholder="Title"
 					type="text"
 					value={title}
 					onChange={(e) => {
 						setTitle(e.target.value);
 					}}
 				/>
-				<button type="submit" className="mb-3">
+				<button type="submit" className="mb-3 new-article-btn">
 					Submit
 				</button>
 			</form>
@@ -121,7 +121,7 @@ const AddNewArticlesPage = () => {
 			>
 				<h4>Modify Article</h4>
 				<input
-					placeholder="id"
+					placeholder="ID"
 					type="text"
 					value={id}
 					onChange={(e) => {
@@ -129,7 +129,7 @@ const AddNewArticlesPage = () => {
 					}}
 				/>
 				<input
-					placeholder="author"
+					placeholder="Author"
 					type="text"
 					value={modifyAuthor}
 					onChange={(e) => {
@@ -137,7 +137,7 @@ const AddNewArticlesPage = () => {
 					}}
 				/>
 				<input
-					placeholder="content"
+					placeholder="Content"
 					type="text"
 					value={modifyContent}
 					onChange={(e) => {
@@ -145,14 +145,14 @@ const AddNewArticlesPage = () => {
 					}}
 				/>
 				<input
-					placeholder="title"
+					placeholder="Title"
 					type="text"
 					value={modifyTitle}
 					onChange={(e) => {
 						setModifyTitle(e.target.value);
 					}}
 				/>
-				<button type="submit" className="mb-3">
+				<button type="submit" className="mb-3 new-article-btn">
 					Modify
 				</button>
 			</form>
@@ -163,14 +163,14 @@ const AddNewArticlesPage = () => {
 			>
 				<h4>Delete Article</h4>
 				<input
-					placeholder="id"
+					placeholder="ID"
 					type="text"
 					value={deleteId}
 					onChange={(e) => {
 						setDeleteId(e.target.value);
 					}}
 				/>
-				<button type="submit" className="mb-3">
+				<button type="submit" className="mb-3 new-article-btn">
 					Delete
 				</button>
 			</form>

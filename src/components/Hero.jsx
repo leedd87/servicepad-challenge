@@ -1,5 +1,6 @@
 import React from "react";
 import phones from "../images/image-mockups.png";
+import "../styles/hero.css";
 
 const Hero = () => {
 	return (

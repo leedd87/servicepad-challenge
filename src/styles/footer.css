@@ -1,3 +1,166 @@
-/* .footer {
-	background-color: red;
-} */
+.footer {
+	background-color: #2d314e;
+	height: 190px;
+	display: flex;
+}
+
+.footer-container-links {
+	display: flex;
+	justify-content: space-around;
+
+	width: 70vw;
+}
+
+.first-col {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.sec-col {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.sec-col > a {
+	color: #ffffff;
+	margin-top: 10px;
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: 400;
+}
+
+.sec-col > a:hover {
+	color: #77bda3;
+}
+
+.third-col {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.third-col > a {
+	color: #ffffff;
+	margin-top: 10px;
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: 400;
+}
+
+.third-col > a:hover {
+	color: #77bda3;
+}
+
+.footer-social-links {
+	margin-top: 50px;
+}
+
+.footer-social-links > a {
+	margin-left: 10px;
+}
+
+.footer-social-links > a > img:hover {
+	background: #77bda3;
+}
+
+.footer-request-btn {
+	width: 30vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.footer-copyright {
+	color: #ffffff;
+}
+
+.form-new-article {
+	padding-top: 80px;
+}
+.footer {
+	background-color: #2d314e;
+	height: 190px;
+	display: flex;
+}
+
+.footer-container-links {
+	display: flex;
+	justify-content: space-around;
+
+	width: 70vw;
+}
+
+.first-col {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.sec-col {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.sec-col > a {
+	color: #ffffff;
+	margin-top: 10px;
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: 400;
+}
+
+.sec-col > a:hover {
+	color: #77bda3;
+}
+
+.third-col {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.third-col > a {
+	color: #ffffff;
+	margin-top: 10px;
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: 400;
+}
+
+.third-col > a:hover {
+	color: #77bda3;
+}
+
+.footer-social-links {
+	margin-top: 50px;
+}
+
+.footer-social-links > a {
+	margin-left: 10px;
+}
+
+.footer-social-links > a > img:hover {
+	background: #77bda3;
+}
+
+.footer-request-btn {
+	width: 30vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.footer-copyright {
+	color: #ffffff;
+}
+
+.form-new-article {
+	padding-top: 80px;
+}
