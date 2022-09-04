@@ -7,6 +7,7 @@ import currency from "../images/image-currency.jpg";
 import confetti from "../images/image-confetti.jpg";
 import plane from "../images/image-plane.jpg";
 import restaurant from "../images/image-restaurant.jpg";
+import { Link as LinkRouter } from "react-router-dom";
 
 const LatestArticles = () => {
 	const [articles, setArticles] = useState();
@@ -29,7 +30,12 @@ const LatestArticles = () => {
 
 	return (
 		<div className="latest-articles-container">
-			<h2>Latest Articles</h2>
+			<div className="latest-text-container">
+				<h2>Latest Articles</h2>
+				<LinkRouter to="/addarticle">
+					<button className="add-new-article">+Add New Article</button>
+				</LinkRouter>
+			</div>
 			<div className="article-container">
 				{/* {articlesSortById &&
 					articlesSortById.map((article) => (

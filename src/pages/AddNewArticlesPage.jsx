@@ -80,8 +80,12 @@ const AddNewArticlesPage = () => {
 	};
 
 	return (
-		<div>
-			<form className="d-flex flex-column container" onSubmit={addArticle}>
+		<>
+			<form
+				className="d-flex flex-column container form-new-article"
+				onSubmit={addArticle}
+			>
+				<h4>Add new Article</h4>
 				<input
 					placeholder="author"
 					type="text"
@@ -112,9 +116,10 @@ const AddNewArticlesPage = () => {
 			</form>
 
 			<form
-				className="d-flex flex-column container"
+				className="d-flex flex-column container form-new-article"
 				onSubmit={modifyArticle}
 			>
+				<h4>Modify Article</h4>
 				<input
 					placeholder="id"
 					type="text"
@@ -153,9 +158,10 @@ const AddNewArticlesPage = () => {
 			</form>
 
 			<form
-				className="d-flex flex-column container"
+				className="d-flex flex-column container form-new-article"
 				onSubmit={deleteArticle}
 			>
+				<h4>Delete Article</h4>
 				<input
 					placeholder="id"
 					type="text"
@@ -168,7 +174,7 @@ const AddNewArticlesPage = () => {
 					Delete
 				</button>
 			</form>
-		</div>
+		</>
 	);
 };
 
