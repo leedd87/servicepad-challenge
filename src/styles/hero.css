@@ -2,7 +2,7 @@
 	background-color: #fafafa;
 	display: grid;
 	grid-template-columns: 40% 60%;
-	height: 90vh;
+	height: 700px;
 	justify-content: center;
 	align-items: center;
 	position: relative;
@@ -36,6 +36,6 @@
 }
 
 .phones {
-	width: 85%;
-	transform: translate(140px, -50px);
+	width: 74%;
+	transform: translate(112px, 80px);
 }

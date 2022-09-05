@@ -5,23 +5,15 @@ const CardLatestArticles = ({ article }) => {
 
 	return (
 		<>
-			<a href="/" class="article__item">
-				<div
-					class="article__image"
-					//style="background-image: url('images/image-currency.jpg')"
-				></div>
-				<div class="article__text">
-					<div class="article__author">By Claire Robinson</div>
-					<div class="article__title">
-						Receive money in any currency with no fees
-					</div>
-					<div class="article__description">
-						The world is getting smaller and we're becoming more mobile.
-						So why should you be forced to only receive money in a single
-						…
-					</div>
-				</div>
-			</a>
+			<div className="article-img-container">
+				<img src={article.image_url} alt="" />
+			</div>
+			<div className="article-text">
+				<span>{article.author}</span>
+				<h5>{article.title}</h5>
+
+				<p>{article.content}</p>
+			</div>
 		</>
 	);
 };

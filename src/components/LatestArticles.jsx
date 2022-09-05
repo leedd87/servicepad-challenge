@@ -2,12 +2,12 @@ import React from "react";
 import axios from "axios";
 import { useEffect, useState } from "react";
 import "../styles/latestArticle.css";
-//import CardLatestArticles from "./CardLatestArticles";
-import currency from "../images/image-currency.jpg";
-import confetti from "../images/image-confetti.jpg";
-import plane from "../images/image-plane.jpg";
-import restaurant from "../images/image-restaurant.jpg";
+import CardLatestArticles from "./CardLatestArticles";
 import { Link as LinkRouter } from "react-router-dom";
+// import currency from "../images/image-currency.jpg";
+// import confetti from "../images/image-confetti.jpg";
+// import plane from "../images/image-plane.jpg";
+// import restaurant from "../images/image-restaurant.jpg";
 
 const LatestArticles = () => {
 	const [articles, setArticles] = useState();
@@ -22,9 +22,11 @@ const LatestArticles = () => {
 
 	//console.log(articles);
 
-	let articlesSortById = articles?.sort(function (a, b) {
-		return b.id - a.id;
-	});
+	let articlesSortById = articles
+		?.sort(function (a, b) {
+			return b.id - a.id;
+		})
+		.slice(0, 4);
 
 	console.log(articlesSortById);
 
@@ -37,11 +39,13 @@ const LatestArticles = () => {
 				</LinkRouter>
 			</div>
 			<div className="article-container">
-				{/* {articlesSortById &&
+				{articlesSortById &&
 					articlesSortById.map((article) => (
-						<CardLatestArticles article={article} />
-					))} */}
-				<div className="article-card">
+						<div key={article.id} className="article-card">
+							<CardLatestArticles article={article} />
+						</div>
+					))}
+				{/* <div className="article-card">
 					<div className="article-img-container">
 						<img src={currency} alt="" />
 					</div>
@@ -97,7 +101,7 @@ const LatestArticles = () => {
 							through the site ...
 						</p>
 					</div>
-				</div>
+				</div> */}
 			</div>
 		</div>
 	);

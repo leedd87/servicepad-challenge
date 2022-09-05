@@ -133,7 +133,7 @@ const AddNewArticlesPage = () => {
 					type="text"
 					value={modifyAuthor}
 					onChange={(e) => {
-						setAuthor(e.target.value);
+						setModifyAuthor(e.target.value);
 					}}
 				/>
 				<input
