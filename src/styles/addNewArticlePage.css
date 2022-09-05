@@ -1,0 +1,51 @@
+.new-article-container {
+	background-color: #f9f9f9;
+}
+
+label {
+	display: flex;
+	flex-direction: column;
+	padding-left: 50px;
+	padding-right: 50px;
+	font-size: 14px;
+	margin-top: 20px;
+}
+
+input {
+	height: 50px;
+}
+
+.form-new-article {
+	background-color: #ffffff;
+	margin: auto;
+	border-radius: 41px;
+}
+.new-article-text {
+	padding-top: 100px;
+	font-size: 40px;
+}
+
+.new-article-p {
+	font-size: 17px;
+}
+
+.new-article-btn {
+	background: linear-gradient(90deg, #31cf72 4.85%, #2cbac7 100%);
+	outline: none;
+	border: none;
+	color: #ffffff;
+	width: 90%;
+	align-self: center;
+	margin: 30px 0px;
+	height: 45px;
+	border-radius: 89px;
+}
+
+.article-text-container {
+	margin-left: 260px;
+	margin-bottom: 50px;
+}
+
+.article-text-container > h4 {
+	margin-bottom: 30px;
+}

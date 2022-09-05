@@ -1,0 +1,33 @@
+.article-table {
+	width: 75%;
+	background-color: #ffffff;
+	border-collapse: collapse;
+	/* border-color: #f4f5f7; */
+	border: #f4f5f7 solid 3px;
+	color: #000000;
+	margin: auto;
+}
+
+.table-thead {
+	background-color: #f9fafb;
+	border-radius: 40px;
+}
+
+.table-thead > th {
+	color: #6b7280;
+	font-size: 12px;
+	font-weight: 400;
+	padding: 10px;
+}
+
+.tr-article {
+	color: #2d314e;
+	font-size: 14px;
+	font-weight: 500;
+	padding: 10px;
+}
+
+.tr-article-btn {
+	color: #84e1a7;
+	margin-top: 10px;
+}

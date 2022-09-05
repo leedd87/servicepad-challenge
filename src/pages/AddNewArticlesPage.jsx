@@ -1,180 +1,53 @@
 import axios from "axios";
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import ArticleEditTable from "../components/ArticleEditTable";
+import ArticleForm from "../components/ArticleForm";
+import "../styles/addNewArticlePage.css";
 
 const AddNewArticlesPage = () => {
-	const [author, setAuthor] = useState("");
-	const [content, setContent] = useState("");
-	const [title, setTitle] = useState("");
-	const [id, setId] = useState("");
-	const [modifyAuthor, setModifyAuthor] = useState("");
-	const [modifyContent, setModifyContent] = useState("");
-	const [modifyTitle, setModifyTitle] = useState("");
-	const [deleteId, setDeleteId] = useState("");
+	// const [id, setId] = useState("");
+	// const [modifyAuthor, setModifyAuthor] = useState("");
+	// const [modifyContent, setModifyContent] = useState("");
+	// const [modifyTitle, setModifyTitle] = useState("");
 
-	/*ADD NEW ARTICLE*/
-	const addArticle = (e) => {
-		e.preventDefault();
+	const [articles, setArticles] = useState();
 
-		const newArticle = {
-			author: e.target[0].value,
-			content: e.target[1].value,
-			title: e.target[2].value,
-		};
-
+	useEffect(() => {
 		axios
-			.post(
-				"https://servicepad-post-api.herokuapp.com/articles/",
-				newArticle
-			)
+			.get("https://servicepad-post-api.herokuapp.com/articles/")
 			.then((res) => {
-				console.log(res);
-			})
-			.catch((error) => {
-				console.log(error);
+				setArticles(res.data.data);
 			});
+	}, []);
 
-		console.log("Add new article");
+	let articlesSortById = articles
+		?.sort(function (a, b) {
+			return a.id - b.id;
+		})
+		.splice(0, 6);
 
-		setAuthor("");
-		setContent("");
-		setTitle("");
-	};
-
-	/*MODIFY ARTICLE */
-	const modifyArticle = (e) => {
-		e.preventDefault();
-
-		const modifyArticle = {
-			author: e.target[1].value,
-			content: e.target[2].value,
-			title: e.target[3].value,
-		};
-
-		axios
-			.put(
-				`https://servicepad-post-api.herokuapp.com/articles/${e.target[0].value}`,
-				modifyArticle
-			)
-			.then((res) => console.log(res))
-			.catch((error) => console.log(error));
-
-		setId("");
-		setModifyAuthor("");
-		setModifyContent("");
-		setModifyTitle("");
-	};
-
-	/*DELETE ARTICLE */
-	const deleteArticle = (e) => {
-		e.preventDefault();
-
-		axios
-			.delete(
-				`https://servicepad-post-api.herokuapp.com/articles/${e.target[0].value}`
-			)
-			.then((res) => console.log(res))
-			.catch((error) => console.log(error));
-
-		setDeleteId("");
-	};
+	console.log(articlesSortById);
 
 	return (
-		<>
-			<form
-				className="d-flex flex-column container form-new-article"
-				onSubmit={addArticle}
-			>
-				<h4>Add new Article</h4>
-				<input
-					placeholder="Author"
-					type="text"
-					value={author}
-					onChange={(e) => {
-						setAuthor(e.target.value);
-					}}
-				/>
-				<input
-					placeholder="Content"
-					type="text"
-					value={content}
-					onChange={(e) => {
-						setContent(e.target.value);
-					}}
-				/>
-				<input
-					placeholder="Title"
-					type="text"
-					value={title}
-					onChange={(e) => {
-						setTitle(e.target.value);
-					}}
-				/>
-				<button type="submit" className="mb-3 new-article-btn">
-					Submit
-				</button>
-			</form>
-
-			<form
-				className="d-flex flex-column container form-new-article"
-				onSubmit={modifyArticle}
-			>
-				<h4>Modify Article</h4>
-				<input
-					placeholder="ID"
-					type="text"
-					value={id}
-					onChange={(e) => {
-						setId(e.target.value);
-					}}
-				/>
-				<input
-					placeholder="Author"
-					type="text"
-					value={modifyAuthor}
-					onChange={(e) => {
-						setModifyAuthor(e.target.value);
-					}}
-				/>
-				<input
-					placeholder="Content"
-					type="text"
-					value={modifyContent}
-					onChange={(e) => {
-						setModifyContent(e.target.value);
-					}}
-				/>
-				<input
-					placeholder="Title"
-					type="text"
-					value={modifyTitle}
-					onChange={(e) => {
-						setModifyTitle(e.target.value);
-					}}
-				/>
-				<button type="submit" className="mb-3 new-article-btn">
-					Modify
-				</button>
-			</form>
-
-			<form
-				className="d-flex flex-column container form-new-article"
-				onSubmit={deleteArticle}
-			>
-				<h4>Delete Article</h4>
-				<input
-					placeholder="ID"
-					type="text"
-					value={deleteId}
-					onChange={(e) => {
-						setDeleteId(e.target.value);
-					}}
-				/>
-				<button type="submit" className="mb-3 new-article-btn">
-					Delete
-				</button>
-			</form>
-		</>
+		<div className="new-article-container">
+			<div className="article-text-container">
+				<h4 className="new-article-text new-article-text-one">
+					Add New Blog Article
+				</h4>
+				<p className="new-article-p">
+					Publish a new blog article to feature in the Easybank homepage
+				</p>
+			</div>
+			<ArticleForm />
+			<div className="article-text-container">
+				<h4 className="new-article-text">Previous Articles</h4>
+				<p className="new-article-p">
+					Review and edit previous blog posts published on to the homepage.
+				</p>
+			</div>
+			<ArticleEditTable article={articlesSortById} />
+		</div>
 	);
 };
 

@@ -4,6 +4,8 @@ import Index from "./pages/Index";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 import AddNewArticlesPage from "./pages/AddNewArticlesPage";
+import LatestArticles from "./components/LatestArticles";
+import EditArticle from "./components/EditArticle";
 
 function App() {
 	return (
@@ -13,7 +15,9 @@ function App() {
 			<Routes>
 				<Route path="/" element={<Index />} />
 				<Route path="/addarticle" element={<AddNewArticlesPage />} />
+				<Route path="/editarticle/:id" element={<EditArticle />} />
 			</Routes>
+			<LatestArticles />
 			<Footer />
 		</div>
 	);

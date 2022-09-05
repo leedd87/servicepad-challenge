@@ -14,13 +14,6 @@ p {
 	color: #99989d;
 }
 
-.new-article-btn {
-	background: linear-gradient(90deg, #31cf72 4.85%, #2cbac7 100%);
-	outline: none;
-	border: none;
-	color: #ffffff;
-}
-
 .invite-btn {
 	border: none;
 	outline: none;
@@ -45,7 +38,6 @@ p {
 	background: linear-gradient(90deg, #31cf72 4.85%, #2cbac7 100%);
 	color: #ffffff;
 	margin: 20px 0px;
-	/* padding: 10px 25px; */
 	width: 165px;
 	height: 45px;
 	border-radius: 89px;
