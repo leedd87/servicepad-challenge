@@ -25,7 +25,7 @@
 	position: absolute;
 	left: 50%;
 	transform: translateX(-50%);
-	bottom: -35px;
+	bottom: -31px;
 	width: 0;
 	height: 4px;
 	background: linear-gradient(90deg, #36cb6d 0%, #29b8c8 100%);

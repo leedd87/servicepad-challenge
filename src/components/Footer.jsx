@@ -39,14 +39,22 @@ const Footer = () => {
 
 					<div className="sec-col">
 						<a href="/">About Us</a>
-						<a href="/">Contact</a>
-						<a href="/">Blog</a>
+						<span href="/" className="sec-col-item">
+							Contact
+						</span>
+						<a href="/" className="sec-col-item">
+							Blog
+						</a>
 					</div>
 
 					<div className="third-col">
 						<a href="/">Careers</a>
-						<a href="/">Support</a>
-						<a href="/">Privacy Policy</a>
+						<a href="/" className="third-col-item">
+							Support
+						</a>
+						<a href="/" className="third-col-item">
+							Privacy Policy
+						</a>
 					</div>
 				</div>
 
